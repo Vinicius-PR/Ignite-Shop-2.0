@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ignite Shop 2.0 - Ignite 2022 - React JS
 
-## Getting Started
+Ignite Shop 2.0 is an online store that sells shirts.
 
-First, run the development server:
+## Technolages used
+* ReactJs
+* NextJs
+* TypeScript
+* Axios
+* CSS (Stitches)
+* Stripe
+* Keen Slider
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Explanation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The data about the products (shirts) come from Stripe API. All the products are listed on the home page.
+Also, there is a page for each product. It shows the image, name, description and price.
+To do the cart, **ContextAPI** was used. It saves the chosen products and calculate the total. Also, the user can increase or decrease the quantity of each product in the cart.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Pages ScreenShots
+### Desktop
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+| Home | Produto |
+| --- | --- |
+| ![Home page](screenshots/desktop/homePage.png) | ![Product Page](screenshots/desktop/productPage.png) | 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+| Carrinho | Checkout | Sucesso |
+| --- | --- | --- |
+| ![Cart](screenshots/desktop//cart.png) | ![Checkout Page](screenshots/desktop/checkoutPage.png) | ![Success Page](screenshots/desktop/successPage.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Mobile:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Home | Carrinho | Produto | Checkout |  Sucesso |
+| --- | --- | --- | --- | --- |
+| ![Home Page](screenshots/mobile/homePage.png) | ![Cart](screenshots/mobile/cart.png) | ![Product Page](screenshots/mobile/productPage.png) | ![Checkout Page](screenshots/mobile/checkoutPage.png) | ![Success Page](screenshots/mobile/successPage.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## How can I use it?
 
-## Deploy on Vercel
+### First
+Check if you have the node and npm (comes with node) installed in your machine. To check, you must go to your terminal or command prompt and type:
+> node -v
+> npm -v
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If shows the version, you are good to go. If not, go to https://nodejs.org/en/ and install the LTS version (it will install both node and npm).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Second
+
+If you don't have an IDE, install one of you preference. In my case, I used Visual Studio Code.
+
+### third
+
+Make an account at stripe or log into your account. Make a store and put some products. You will need the public and secret key that you can find after you do the store inside Stripe.
+
+### Fourth
+
+You clone the project. Use the commande line on your folder:
+ > git clone https://github.com/Vinicius-PR/Challenge-04-Ignite-2022-Ignite-Shop-2.0.git
+ 
+ ### Fiveth
+ 
+Open the folder using your IDE. Then, go to the terminal of your IDE and type the following command to install the dependencies: (or can go to the folder application using normal terminal and type the same command)
+ > npm install
+ 
+ ### Finally
+ 
+Open two terminals and type the next two commands on each to see the result. One to start the server and other to start the application:
+ > npm run dev
