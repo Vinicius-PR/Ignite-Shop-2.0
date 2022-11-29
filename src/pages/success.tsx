@@ -1,6 +1,7 @@
 import { GetServerSideProps } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 import Stripe from 'stripe'
 import { stripe } from '../lib/stripe';
 import { ImageContainer, SuccessContainer, ImageOuterBox } from '../styles/page/success'
@@ -17,12 +18,11 @@ interface SuccessProps {
 
 export default function Success({ customerName, products, totalQuantity }: SuccessProps) {
 
-  // const quantityShirts = products.reduce((acc, value) => {
-  //   return acc + value.
-  // }, 0)
-
   return (
     <SuccessContainer>
+      <Head>
+        <title>Ignite Shop 2.0 Parabéns {customerName}</title>
+      </Head>
       <h1>Compra efetuada!</h1>
       <ImageOuterBox>
         {

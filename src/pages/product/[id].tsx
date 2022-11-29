@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import { useContext, useState } from 'react'
 import Stripe from 'stripe'
 import { CartContext } from '../../context/CartContext'
@@ -32,6 +33,9 @@ export default function Product({ product }: ProductProps) {
 
   return (
     <ProductContainer>
+      <Head>
+        <title>Ignite Shop 2.0 - {product.name}</title>
+      </Head>
       <ImageContainer>
         <Image src={product.imageUrl} width={520} height={480} alt='' />
       </ImageContainer>
