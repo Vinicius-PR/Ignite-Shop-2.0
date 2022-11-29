@@ -40,6 +40,7 @@ To do the cart, **ContextAPI** was used. It saves the chosen products and calcul
 ### First
 Check if you have the node and npm (comes with node) installed in your machine. To check, you must go to your terminal or command prompt and type:
 > node -v
+
 > npm -v
 
 If shows the version, you are good to go. If not, go to https://nodejs.org/en/ and install the LTS version (it will install both node and npm).
