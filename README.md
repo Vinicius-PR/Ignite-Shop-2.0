@@ -65,5 +65,5 @@ Open the folder using your IDE. Then, go to the terminal of your IDE and type th
  
  ### Finally
  
-Open two terminals and type the next two commands on each to see the result. One to start the server and other to start the application:
+Type the next command to start the aplication:
  > npm run dev
