@@ -1,4 +1,4 @@
-# Ignite Shop 2.0 - Ignite 2022 - React JS
+# Ignite Shop 2.0 - React JS
 
 Ignite Shop 2.0 is an online store that sells shirts.
 
@@ -13,7 +13,7 @@ Ignite Shop 2.0 is an online store that sells shirts.
 
 ## Explanation
 
-The data about the products (shirts) come from Stripe API. All the products are listed on the home page.
+The data about the products (shirts) come from [Stripe API](https://stripe.com/en-br "Stripe home page"). All the products are listed on the home page.
 Also, there is a page for each product. It shows the image, name, description and price.
 To do the cart, **ContextAPI** was used. It saves the chosen products and calculate the total. Also, the user can increase or decrease the quantity of each product in the cart.
 
